@@ -59,13 +59,13 @@ D7 = X Y Z
 2.Get inputs and outputs for encoders and decoders.
 3.perform or operation for encoder and and logic for decoders.
 4.perform RTL LOGIC and get waveform.
-### PROGRAM 
+### PROGRAM :
+```
 /*
 Program for Endocers and Decoders  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: HARI PRASATH S
+RegisterNumber: 212222240034
 */
-```
 ENCODER:
 module encoder(a,b,c,d0,d1,d2,d3,d4,d5,d6,d7);
 output a,b,c;
