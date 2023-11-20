@@ -108,7 +108,3 @@ endmodule
 ![281369432-786d0a22-1175-46fd-9496-c0a411d970bc](https://github.com/hariprasath5106/Experiment-08-Encoders-and-decoders-/assets/111515488/a05adb1c-546b-4ecb-ae79-ce5e0bb10cf7)
 ## RESULTS
 Thus the program to desing encoder and decoder is done.
-
-
-
-### RESULTS 
