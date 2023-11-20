@@ -54,42 +54,60 @@ D7 = X Y Z
 ![image](https://user-images.githubusercontent.com/36288975/171543866-5a6eace6-8683-49d7-9c4f-a7cb30ec3035.png)
 ## Figure -04 8 to 3 Decoder implementation 
 
-### Procedure
-/* write all the steps invloved */
-
-
-
+### Procedure:
+1.create module encoder and decoder.
+2.Get inputs and outputs for encoders and decoders.
+3.perform or operation for encoder and and logic for decoders.
+4.perform RTL LOGIC and get waveform.
 ### PROGRAM 
 /*
 Program for Endocers and Decoders  and verify its truth table in quartus using Verilog programming.
 Developed by: 
 RegisterNumber:  
 */
+```
+ENCODER:
+module encoder(a,b,c,d0,d1,d2,d3,d4,d5,d6,d7);
+output a,b,c;
+input d0,d1,d2,d3,d4,d5,d6,d7;
+or(a,d4,d5,d6,d7);
+or(b,d2,d3,d6,d7);
+or(c,d1,d3,d5,d7);
+endmodule
 
 
-
-
-
-
+DECODER:
+module decoder(d0,d1,d2,d3,d4,d5,d6,d7,a,b,c);
+output d0,d1,d2,d3,d4,d5,d6,d7;
+input a,b,c;
+assign d0 = (~a&~b&~c);
+assign d1 = (~a&~b&c);
+assign d2 = (~a&b&~c);
+assign d3 = (~a&b&c);
+assign d4 = (a&~b&~c);
+assign d5 = (a&~b&c);
+assign d6 = (a&b&~c);
+assign d7 = (a&b&c);
+endmodule
+```
 ### RTL LOGIC  
-
-
-
-
-
-
-
-
-### TIMING DIGRAMS  
-
-
-
-
-
+## Encoder
+![281358589-0505e2bc-6aa2-4089-8fb1-5ce51951f26a](https://github.com/hariprasath5106/Experiment-08-Encoders-and-decoders-/assets/111515488/734317e1-7d47-4dbf-8760-0f59168dc5d5)
+## Decoder
+![281360295-1311b817-7dd7-4db4-ab38-626a7c50826b](https://github.com/hariprasath5106/Experiment-08-Encoders-and-decoders-/assets/111515488/081c41d1-8c76-488e-ad3a-eec4a7243e5d)
+### TIMING DIGRAMS 
+## Encoder
+![281358589
+![281360413-c15a5f84-b485-4ac4-bef8-bf2dfe24a51e](https://github.com/hariprasath5106/Experiment-08-Encoders-and-decoders-/assets/111515488/95d57977-3a7b-4e96-ad68-86c7f30350a0)
+## Decoder
+![281360491-407c8ad2-8534-4c7e-9a20-587c099696e0](https://github.com/hariprasath5106/Experiment-08-Encoders-and-decoders-/assets/111515488/ac2b988f-3b8e-41ec-a712-cbc7e060e03a)
 ### TRUTH TABLE 
-
-
-
+## Encoder
+![281369534-bd5be4c2-7afa-4ba9-8606-05514c0ba5b2](https://github.com/hariprasath5106/Experiment-08-Encoders-and-decoders-/assets/111515488/d3ba2c68-d79c-4e2d-8bc9-96402fd12da2)
+## Decoder
+![281369432-786d0a22-1175-46fd-9496-c0a411d970bc](https://github.com/hariprasath5106/Experiment-08-Encoders-and-decoders-/assets/111515488/a05adb1c-546b-4ecb-ae79-ce5e0bb10cf7)
+## RESULTS
+Thus the program to desing encoder and decoder is done.
 
 
 
